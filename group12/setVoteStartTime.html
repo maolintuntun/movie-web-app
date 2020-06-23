@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Find easily a doctor and book online an appointment">
+	<meta name="author" content="Ansonika">
+	<title>FINDOCTOR - Find easily a doctor and book online an appointment</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
+
+	<!-- SPECIFIC CSS -->
+	<link href="css/date_picker.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="preloader" class="Fixed">
+	<div data-loader="circle-side"></div>
+</div>
+<!-- /Preload-->
+
+<div id="page">
+	<header class="header_sticky">
+		<a href="#menu" class="btn_mobile">
+			<div class="hamburger hamburger--spin" id="hamburger">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+		</a>
+		<!-- /btn_mobile-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-6">
+					<div id="logo">
+
+					</div>
+				</div>
+				<div class="col-lg-9 col-6">
+					<nav id="menu" class="main-menu">
+						<ul>
+							<li>
+								<span><a id="idd" href="#0">Home</a></span>
+								<ul>
+									<li><a href="ModeratorIndex.html">Home </a></li>
+									<li><a href="index.html" id="logout">Logout</a></li>
+								</ul>
+							</li>
+
+
+						</ul>
+					</nav>
+					<!-- /main-menu -->
+				</div>
+			</div>
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /header -->
+
+	<main>
+		<div id="breadcrumb">
+			<div class="container">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Category</a></li>
+					<li>Page active</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /breadcrumb -->
+
+		<div class="container margin_60">
+			<div class="row">
+
+				<aside class="col-xl-3 col-lg-4" id="sidebar">
+					<div class="box_profile">
+
+						<small>Event 01</small>
+						<h1 id ="evn"> </h1>
+
+
+
+					</div>
+				</aside>
+				<!-- /asdide -->
+
+				<div class="col-xl-9 col-lg-8">
+
+					<div class="tabs_styled_2">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book">Set day and time</a>
+							</li>
+
+						</ul>
+						<!--/nav-tabs -->
+
+						<div class="tab-content">
+
+							<div class="tab-pane fade show active" id="book" role="tabpanel" aria-labelledby="book-tab">
+								<p class="lead add_bottom_30">Set the specific begin date and time of the voting.</p>
+								<form>
+									<div class="main_title_3">
+										<h3><strong>1</strong>Select the date</h3>
+									</div>
+									<div id="calendar"></div>
+
+									<div class="main_title_3">
+										<h3><strong>2</strong>Select the time</h3>
+									</div>
+									<div class="row justify-content-center add_bottom_45">
+										<div class="col-md-3 col-3 text-center">
+											<ul class="time_select">
+												<li>
+													<input type="radio" id="radio0" name="radio_time" value="00:00am">
+													<label for="radio0">00:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio1" name="radio_time" value="01:00am">
+													<label for="radio1">01:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio2" name="radio_time" value="02:00am">
+													<label for="radio2">02:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio3" name="radio_time" value="03:00am">
+													<label for="radio3">03:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio4" name="radio_time" value="04:00am">
+													<label for="radio4">04:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio5" name="radio_time" value="05:00am">
+													<label for="radio5">05:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio6" name="radio_time" value="06:00am">
+													<label for="radio6">06:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio7" name="radio_time" value="07:00am">
+													<label for="radio7">07:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio8" name="radio_time" value="08:00am">
+													<label for="radio8">08:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio9" name="radio_time" value="09:00am">
+													<label for="radio9">09:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio10" name="radio_time" value="10:00am">
+													<label for="radio10">10:00am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio11" name="radio_time" value="11:00am">
+													<label for="radio11">11:00am</label>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-3 col-3 text-center">
+											<ul class="time_select">
+												<li>
+													<input type="radio" id="radio12" name="radio_time" value="00:30am">
+													<label for="radio12">00:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio13" name="radio_time" value="01:30am">
+													<label for="radio13">01:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio14" name="radio_time" value="02:30am">
+													<label for="radio14">02:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio15" name="radio_time" value="03:30am">
+													<label for="radio15">03:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio16" name="radio_time" value="04:30am">
+													<label for="radio16">04:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio17" name="radio_time" value="05:30am">
+													<label for="radio17">05:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio18" name="radio_time" value="06:30am">
+													<label for="radio18">06:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio19" name="radio_time" value="07:30am">
+													<label for="radio19">07:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio20" name="radio_time" value="08:30am">
+													<label for="radio20">08:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio21" name="radio_time" value="09:30am">
+													<label for="radio21">09:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio22" name="radio_time" value="10:30am">
+													<label for="radio22">10:30am</label>
+												</li>
+												<li>
+													<input type="radio" id="radio23" name="radio_time" value="11:30am">
+													<label for="radio23">11:30am</label>
+												</li>
+											</ul>
+											</ul>
+										</div>
+
+										<div class="col-md-3 col-3 text-center">
+											<ul class="time_select">
+												<li>
+													<input type="radio" id="radio24" name="radio_time" value="00:00pm">
+													<label for="radio24">00:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio25" name="radio_time" value="01:00pm">
+													<label for="radio25">01:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio26" name="radio_time" value="02:00pm">
+													<label for="radio26">02:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio27" name="radio_time" value="03:00pm">
+													<label for="radio27">03:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio28" name="radio_time" value="04:00pm">
+													<label for="radio28">04:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio29" name="radio_time" value="05:00pm">
+													<label for="radio29">05:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio30" name="radio_time" value="06:00pm">
+													<label for="radio30">06:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio31" name="radio_time" value="07:00pm">
+													<label for="radio31">07:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio32" name="radio_time" value="08:00pm">
+													<label for="radio32">08:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio33" name="radio_time" value="09:00pm">
+													<label for="radio33">09:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio34" name="radio_time" value="10:00pm">
+													<label for="radio34">10:00pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio35" name="radio_time" value="11:00pm">
+													<label for="radio35">11:00pm</label>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-3 col-3 text-center">
+											<ul class="time_select">
+												<li>
+													<input type="radio" id="radio36" name="radio_time" value="00:30pm">
+													<label for="radio36">00:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio37" name="radio_time" value="01:30pm">
+													<label for="radio37">01:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio38" name="radio_time" value="02:30pm">
+													<label for="radio38">02:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio39" name="radio_time" value="03:30pm">
+													<label for="radio39">03:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio40" name="radio_time" value="04:30pm">
+													<label for="radio40">04:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio41" name="radio_time" value="05:30pm">
+													<label for="radio41">05:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio42" name="radio_time" value="06:30pm">
+													<label for="radio42">06:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio43" name="radio_time" value="07:30pm">
+													<label for="radio43">07:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio44" name="radio_time" value="08:30pm">
+													<label for="radio44">08:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio45" name="radio_time" value="09:30pm">
+													<label for="radio45">09:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio46" name="radio_time" value="10:30pm">
+													<label for="radio46">10:30pm</label>
+												</li>
+												<li>
+													<input type="radio" id="radio47" name="radio_time" value="11:30pm">
+													<label for="radio47">11:30pm</label>
+												</li>
+											</ul>
+											</ul>
+										</div>
+
+										<!-- /row -->
+
+
+
+								</form>
+								<hr>
+								<p class="text-center"><a class="btn_1 medium" id = "getStartTime">Next</a></p>
+							</div>
+							<!-- /tab_1 -->
+
+							<!-- /tab_2 -->
+
+							<!-- /tab_3 -->
+						</div>
+						<!-- /tab-content -->
+					</div>
+					<!-- /tabs_styled -->
+				</div>
+				<!-- /col -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</main>
+	<!-- /main -->
+
+
+</div>
+<!-- page -->
+
+<div id="toTop"></div>
+<!-- Back to top button -->
+
+<!-- COMMON SCRIPTS -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/common_scripts.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/jquery.params.js"></script>
+
+<!-- SPECIFIC SCRIPTS -->
+<script src="js/bootstrap-datepicker.js"></script>
+<script>
+	$("#idd").text("Welcome, "+localStorage.id+"!");
+	$("#evn").text($.query.get("eventName"));
+	var startVoteDate;
+	$('#calendar').datepicker({
+		todayHighlight: true,
+		daysOfWeekDisabled: [0],
+		weekStart: 1,
+		format: "yyyy-mm-dd",
+		datesDisabled: ["2017/10/20", "2017/11/21", "2017/12/21", "2018/01/21", "2018/02/21", "2018/03/21"],
+	}).on('changeDate',gotoDate);
+	function gotoDate(ev){
+		startVoteDate = ev.date.getFullYear().toString() + "-"+ (ev.date.getMonth() + 1 < 10 ? "0" + (ev.date.getMonth() + 1) : ev.date.getMonth() + 1) +
+				"-"+ (ev.date.getDate() < 10 ? "0" + ev.date.getDate() : ev.date.getDate());
+	}
+	$("#getStartTime").click(function(){
+		var startVoteTime = $("input[type='radio']:checked").val();
+		window.location.href = "setVoteEndTime.html?moderatorAccount="+$.query.get("moderatorAccount")+"&groupName="+
+				$.query.get("groupName")+"&eventName="+$.query.get("eventName")+"&startTime="+$.query.get("startTime")+"&endTime="+$.query.get("endTime")+"&startVoteTime="+startVoteDate+" "+startVoteTime;
+	});
+</script>
+
+</body>
+</html>

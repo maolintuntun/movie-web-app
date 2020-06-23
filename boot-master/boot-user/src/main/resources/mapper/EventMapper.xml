@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wqlm.boot.user.dao.EventMapper">
+  <resultMap id="BaseResultMap" type="com.wqlm.boot.user.po.Event">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="name" jdbcType="VARCHAR" property="name" />
+    <result column="start_time" jdbcType="VARCHAR" property="startTime" />
+    <result column="end_time" jdbcType="VARCHAR" property="endTime" />
+    <result column="vote_start" jdbcType="VARCHAR" property="voteStart" />
+    <result column="vote_end" jdbcType="VARCHAR" property="voteEnd" />
+    <result column="winner" jdbcType="VARCHAR" property="winner" />
+    <result column="group_name" jdbcType="VARCHAR" property="groupName" />
+    <result column="moderator_account" jdbcType="VARCHAR" property="moderatorAccount" />
+  </resultMap>
+</mapper>

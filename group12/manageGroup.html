@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Find easily a doctor and book online an appointment">
+	<meta name="author" content="Ansonika">
+	<title>FINDOCTOR - Find easily a doctor and book online an appointment</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
+    
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="preloader" class="Fixed">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- /Preload-->
+	
+	<div id="page">		
+	<header class="header_sticky">	
+		<a href="#menu" class="btn_mobile">
+			<div class="hamburger hamburger--spin" id="hamburger">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+		</a>
+		<!-- /btn_mobile-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-6">
+					<div id="logo">
+				
+					</div>
+				</div>
+				<div class="col-lg-9 col-6">
+					<nav id="menu" class="main-menu">
+						<ul>
+							<li>
+								<span><a id="idd" href="#0"></a></span>
+								<ul>
+									<li><a href="ModeratorIndex.html">Home </a></li>
+									<li><a href="index.html" id="logout">Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<!-- /main-menu -->
+				</div>
+			</div>
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /header -->
+	
+	<main class="bg_color_1">
+	<div class="pricing_head bg_color_2">
+		<div class="container">
+			<h1>Manage Group and Event</h1>
+			<p>Feel free to design your own movie world!</p>
+		</div>
+	</div>
+	<div class="container margin_tabs">
+            <div id="tabs" class="tabs">
+                <nav>
+                    <ul>
+                        <li><a href="#section-1"><i class="pe-7s-rocket"></i>Group Info<em>contain all group info </em></a></li>
+                        <li><a href="#section-2"><i class="pe-7s-plane"></i>Event List<em>contain all event list </em></a></li>
+
+                    </ul>
+                </nav>
+                <div class="content">
+                    <section id="section-1">
+                        <div class="row" id = "test">
+
+						</div>
+                        <!-- /row -->
+                    </section>
+                    <section id="section-2">
+                        <div class="row" id="test2">
+
+     
+                        </div>
+                        <!-- /row -->
+                    </section>
+                </div>
+                <!-- /content -->
+            </div>
+            <!-- /tabs -->
+        </div>
+        <!-- /container -->
+    </main>
+    <!-- /main -->
+	
+	
+	</div>
+	<!-- page -->
+
+	<div id="toTop"></div>
+	<!-- Back to top button -->
+	<script src="js/jquery.params.js"></script>
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/common_scripts.min.js"></script>
+	<script src="js/functions.js"></script>
+    <script src="js/getGroupsModerator.js"></script>
+	<script src="js/logout.js"></script>
+	<script src="js/getEventsModerator.js"></script>
+
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="js/tabs.js"></script>
+	<script>new CBPFWTabs( document.getElementById( 'tabs' ) );</script>
+
+	<script>
+		$("#idd").text("Welcome, "+localStorage.id+"!");
+		$(document).on('click',"#unsubcribe",function(){
+			//var groupName = $("div > span").val(); //id of first password field
+			//var watcherAccount = $('#watcherAccount').val(); //id of second password field
+			var input = { groupName: $(this).parent().children().html(), watcherAccount: localStorage.id };
+			console.log(input);
+			$.ajax({
+				url: "http://localhost:8080/group/unsubscribe",
+				type: "POST",
+				data: input,
+				crossDomain: true,
+				//data: { groupName: 'Cloud', moderatorAccount: 'Jack' },
+				//processData: false,   // jQuery不要去处理发送的数据
+				//contentType: false,
+				success:function(data){
+					console.log(data);
+				},
+				error: function (XMLHttpRequest, textStatus, errorThrown) {
+					// 状态码
+					console.log(XMLHttpRequest.status);
+					// 状态
+					console.log(XMLHttpRequest.readyState);
+					// 错误信息
+					console.log(textStatus);
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>
